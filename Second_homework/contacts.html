@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <link rel="icon" href="img/favicon.svg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+<header class="container">
+    <nav class="navbar">
+        <button class="navbar-toggle" id="navbar-toggle">Меню</button>
+
+        <ul class="navbar-menu" id="navbar-menu">
+            <li class="navbar-item"><a href="index.html">Главная</a></li>
+            <li class="navbar-item"><a href="cases.html">Кейсы</a></li>
+            <li class="navbar-item"><a href="contacts.html" id="item-main">Контакты</a></li>
+            <li class="navbar-item"><a href="about.html">Про меня</a></li>
+        </ul>
+
+        <a href="index.html">
+            <img src="img/logo.svg" alt="Логотип" id="logo">
+        </a>
+    </nav>
+    <button id="toggle" class="toggle">🌙 / ☀️</button>
+</header>
+
+<div class="contacts-header">
+    <h1>Контакты</h1>
+    <div class="contacts-icons">
+        <a href="https://t.me/kkkashrina"><img id="telegram" src="img/Telegram.svg" alt="Telegram"></a>
+        <a href="https://www.whatsapp.com/?lang=ru_RU"><img id="whatsapp" src="img/WhatsApp.svg" alt="WhatsApp"></a>
+    </div>
+</div>
+<hr class="line">
+
+<section class="block">
+    <div class="insta-header">
+        <h2>Instagram</h2>
+        <a href="https://www.instagram.com" class="button-main">ГЛЯНУТЬ</a>
+    </div>
+
+    <div class="insta-gallery" id="gallery">
+        <img src="img/insta1.png" alt="Пост1">
+        <img src="img/insta2.png" alt="Пост2">
+        <img src="img/insta3.png" alt="Пост3">
+        <img src="img/insta4.png" alt="Пост4">
+        <img src="img/insta5.png" alt="Пост5">
+        <img src="img/insta6.png" alt="Пост6">
+        <img src="img/insta1.png" alt="Пост1">
+        <img src="img/insta3.png" alt="Пост3">
+        <img src="img/insta5.png" alt="Пост5">
+    </div>
+    <div class="slider">
+        <button onclick="SliderToLeft()" class="slider-button"><img src="img/Slider_left.svg" alt="Слайдер лево"></button>
+        <button onclick="SliderToRight()" class="slider-button"><img src="img/Slider_right.svg" alt="Слайдер лево"></button>
+    </div>
+</section>
+
+<section class="block">
+    <h2>Обратная связь</h2>
+
+        <form class="feedback-form">
+            <h3>Ваше имя</h3>
+            <label id="form-name" class="form">
+                <input type="text" name="name" placeholder="Введите имя">
+                <div class="error-message" id="nameError"></div>
+            </label>
+
+            <h3>Номер телефона</h3>
+            <label id="form-number" class="form">
+                <input type="tel" name="phone" id="phone" placeholder="+7(999)888-24-35">
+                <div class="error-message" id="phoneError"></div>
+            </label>
+            <h3> Eсли всё корректно то отправьте запрос</h3>
+            <button class="button-main" id="form-button" type="button" onclick="СheckForm()">
+                ОТПРАВИТЬ
+            </button>
+        </form>
+</section>
+
+<footer class="footer">
+    <h2 class="footer-text">Если хотите обсудить проект или просто познакомиться – напишите мне.</h2>
+    <div class="footer-contacts">
+
+        <div class="footer-icons">
+            <a href="https://t.me/kkkashrina"><img id="Telegram2" src="img/Telegram2.svg" alt="Telegram2"></a>
+            <a href="https://www.whatsapp.com/?lang=ru_RU"><img id="WhatsApp2" src="img/WhatsApp2.svg" alt="WhatsApp2"></a>
+        </div>
+        <h3 id="footer-h3">© Katerina 2025</h3>
+    </div>
+</footer>
+</body>
+</html>
