@@ -1,0 +1,25 @@
+package model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ProductRepository {
+    private static final List<Product> products = new ArrayList<>();
+
+    static {
+        products.add(new Product(1, "Футболка", 25.0));
+        products.add(new Product(2, "Джинсы", 40.0));
+        products.add(new Product(3, "Куртка", 60.0));
+    }
+
+    public static Product getById(int id) {
+        return products.stream()
+                .filter(p -> p.getId() == id)
+                .findFirst()
+                .orElse(null);
+    }
+
+    public static List<Product> getAll() {
+        return products;
+    }
+}

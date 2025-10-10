@@ -1,0 +1,44 @@
+# Скомпилированные файлы Java
+*.class
+
+# Папки сборки
+/bin/
+/build/
+/out/
+
+# Файлы IDE (IntelliJ IDEA)
+*.iml
+.idea/
+/*.ipr
+/*.iws
+
+# Eclipse
+*.project
+*.classpath
+*.settings/
+
+# NetBeans
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Файлы логов
+*.log
+
+# Сессии и временные файлы Tomcat
+/work/
+/temp/
+logs/
+*.tmp
+
+# Файлы с данными заказов (если не хочешь их в репозитории)
+orders.txt
+
+# MacOS
+.DS_Store
+
+# SmartTomcat IDE plugin
+.smarttomcat/
